@@ -1,0 +1,163 @@
+
+@media (max-width: 992px) {
+	.top-header{
+		.languague{
+			float: left;
+			margin-top: 20px;
+		}
+	}
+	.banner-main{
+		.title{
+			bottom: -10px;
+			left: -30px;
+		}
+	}
+	.reason-choose{
+		.gr-reason{
+			h2{
+				margin-top: 20px;
+			}
+		}
+	}
+	.feedback{
+		.item-fdb{
+			margin-bottom: 20px;
+		}
+	}
+	.introduce-main{
+		.summary{
+			.col-left{
+				.img{
+					text-align: center;
+				}
+			}
+		}
+	}
+	.introduce-main{
+		.summary{
+			.col-right{
+				padding-left: 15px;
+			}
+		}
+		.service{
+			.sm-gr-service{
+				.item-service.item.half{
+
+				}
+			}
+		}
+		.featured-area{
+			.item-featured-area{
+				.row-top{
+					.video{
+						margin: 20px 0;
+					}
+				}
+				.row-bottom{
+					.item-img{
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.banner-main{
+		.bg-banner{
+			height: 230px;
+			img{
+				height: 100%;
+			}
+		}
+	}
+	.introduce-main{
+		.highlights{
+			.item-highlight{
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.header{
+		.nav-menu{
+			.container {
+				.gr-menu{
+					float: left;
+				}
+			}
+		}
+	}
+	.top-header{
+		.info-contact {
+			.phonenumber{
+				display: block;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+	.introduce-main{
+		.service{
+			.sm-gr-service{
+				flex-direction: column;
+			}
+		}
+	}
+}
+
+.opinion-form {
+    .table-radio {
+        [type="radio"]:checked,
+        [type="radio"]:not(:checked) {
+            position: absolute;
+            left: -9999px;
+        }
+        [type="radio"]:checked+label,
+        [type="radio"]:not(:checked)+label {
+            position: relative;
+            padding-left: 28px;
+            cursor: pointer;
+            line-height: 20px;
+            display: inline-block;
+            color: #666;
+        }
+        [type="radio"]:checked+label:before,
+        [type="radio"]:not(:checked)+label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #ddd;
+            border-radius: 100%;
+            background: #fff;
+        }
+        [type="radio"]:checked+label:after,
+        [type="radio"]:not(:checked)+label:after {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: #F87DA9;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            border-radius: 100%;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+        [type="radio"]:not(:checked)+label:after {
+            opacity: 0;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+        [type="radio"]:checked+label:after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+}

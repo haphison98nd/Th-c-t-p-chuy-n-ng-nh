@@ -1,0 +1,113 @@
+.page-detail-event{
+	float: left;
+	width: 100%;
+	h2{
+		font-size: 30px;
+		text-align: center;
+		letter-spacing: 0.06em;
+		font-family: Pony;
+		color: #49479D;
+		text-transform: uppercase;
+		margin: 0;
+	}
+	.introduce-event{
+		h2{
+			margin-top: 40px;
+		}
+		img.logo-section{
+			display: block;
+			margin: 0 auto;
+			margin-top: 25px;
+			margin-bottom: 46px;
+		}
+		.text{
+			width: 66%;
+			margin: 0 auto;
+			display: block;
+			margin-bottom: 68px;
+			p{
+				text-align: center;
+				color: #49479D;
+				font-size: 16px;
+				line-height: 25px;
+			}
+		}
+	}
+	// .banner-static{
+	// 	img{
+	// 		width: 100%;
+	// 	}
+	// }
+	.content-detail{
+		margin-top: 30px;
+		p{
+			font-size: 16px;
+			line-height: 24px;
+			color: #4D4D4D;
+		}
+		.note{
+			color: #A65DC9;
+			margin-top: 30px;
+		}
+		ul.action-event{
+			margin-top: 27px;
+			p{
+				font-weight: bold;
+				font-size: 22px;
+				color: #2E2E2E;
+				margin-bottom: 25px;
+			}
+			li{
+				list-style: none;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 30px;
+				color: #5F5F5F;
+				&:before{
+					content: "\2022";
+				    font-weight: bold;
+				    display: inline-block;
+				    width: 1em;
+				    color: #5F5F5F;
+				    font-size: 15px;
+				}
+			}
+		}
+		.ticket{
+			p{
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 30px;
+				color: #6967BB;
+			}
+		}
+	}
+}
+
+.image-event{
+	margin-top: 30px;
+	
+	// .item-img{
+	// 	img{
+	// 		width: 100%;
+	// 	}
+	// }
+			
+}
+button.booknow{
+	font-weight: bold;
+	font-size: 20px;
+	color: #FFFFFF;
+	background: linear-gradient(180deg, #EA5454 0%, #C22525 100%);
+	border-radius: 5px;
+	padding: 10px 70px;
+	border: 1px solid #C22525;
+	display: block;
+	margin: 0 auto;
+	margin-top: 60px;
+	margin-bottom: 88px;
+	&:hover{
+		background: #fff;
+		color: #C22525;
+	}
+}

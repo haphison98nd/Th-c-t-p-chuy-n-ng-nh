@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Giỏ hàng </title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/vensdor/bootstrap.css" rel="stylesheet" />
+<link href="css/vensdor/font-awesome.css" rel="stylesheet" />
+<link href="css/vensdor/animate.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/vensdor/slick.css"/>
+<link rel="stylesheet" href="css/vensdor/jquery.fancybox.min.css" />
+<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+<link href="css/style.css" rel="stylesheet" />
+
+
+<!-- Modernizr -->
+<script src="https://use.fontawesome.com/4086620bc9.js"></script>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+	<div class="menu-bar-mobile" tabindex="-1">
+        <div class="logo-menu">
+            <a href=""><img class="transition" src="images/logo.png"></a>
+        </div>
+        <div class="menu-bar-lv-1">
+            <a class="a-lv-1" href="">Chọn giao diện</a>
+            <div class="menu-bar-lv-2">
+                <a class="a-lv-2" href=""><i class="fa fa-angle-right"></i>Bảng giá</a>
+                <div class="menu-bar-lv-3">
+                    <a class="a-lv-3" href=""><i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i>Bảng giá</a>
+                </div>
+                <div class="menu-bar-lv-3">
+                    <a class="a-lv-3" href=""><i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i>Dịch vụ</a>
+                </div>
+                <div class="menu-bar-lv-3">
+                    <a class="a-lv-3" href=""><i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i>Blog</a>
+                </div>
+                <span class="span-lv-2 fa fa-angle-down"></span>
+            </div>
+            <div class="menu-bar-lv-2"><a class="a-lv-2" href=""><i class="fa fa-angle-right"></i>Bảng giá</a></div>
+            <div class="menu-bar-lv-2"><a class="a-lv-2" href=""><i class="fa fa-angle-right"></i>Dịch vụ</a></div>
+            <div class="menu-bar-lv-2"><a class="a-lv-2" href=""><i class="fa fa-angle-right"></i>Blog</a></div>
+            <span class="span-lv-1 fa fa-angle-down"></span>
+        </div>
+        <div class="menu-bar-lv-1"><a href="">Bảng giá</a></div>
+        <div class="menu-bar-lv-1"><a href="">Dịch vụ</a></div>
+        <div class="menu-bar-lv-1">
+            <a class="a-lv-1" href="">Tin tức</a>
+            <div class="menu-bar-lv-2">
+                <a class="a-lv-2" href=""><i class="fa fa-angle-right"></i>Bảng giá</a>
+                <div class="menu-bar-lv-3">
+                    <a class="a-lv-3" href=""><i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i>Bảng giá</a>
+                </div>
+                <div class="menu-bar-lv-3">
+                    <a class="a-lv-3" href=""><i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i>Dịch vụ</a>
+                </div>
+                <div class="menu-bar-lv-3">
+                    <a class="a-lv-3" href=""><i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i>Tin tức</a>
+                </div>
+                <span class="span-lv-2 fa fa-angle-down"></span>
+            </div>
+            <div class="menu-bar-lv-2"><a class="a-lv-2" href=""><i class="fa fa-angle-right"></i>Bảng giá</a></div>
+            <div class="menu-bar-lv-2"><a class="a-lv-2" href=""><i class="fa fa-angle-right"></i>Dịch vụ</a></div>
+            <div class="menu-bar-lv-2"><a class="a-lv-2" href=""><i class="fa fa-angle-right"></i>Blog</a></div>
+            <span class="span-lv-1 fa fa-angle-down"></span>
+        </div>
+        <div class="menu-bar-lv-1"><a href="">Về chúng tôi</a></div>
+        <div class="menu-bar-lv-1"><a href="">Hỗ trợ</a></div>
+    </div>
+    <div class="shadow-open-menu"></div>
+	<div class="iconmenu">  <!-- data-wow-delay="4s" data-wow-duration="1s" -->
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<div class="top-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-md-12 col-xs-12">
+					<div class="info-contact">
+						<div class="phonenumber">
+							<i class="fas fa-phone-alt"></i>
+							<span> 098 9836 086 / 091 2466 063 </span>
+						</div>
+						<div class="email">
+							<i class="fas fa-envelope"></i>
+							<span> songhongfam@gmail.com </span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-md-12 col-xs-12">
+					<div class="icon-social">
+						<a href="#">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-youtube-play" aria-hidden="true"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header">
+		<div class="nav-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-4 col-sm-2">
+						<div class="logo">
+							<a href="">
+								<img src="images/logo.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-7 col-md-8 col-sm-10">
+						<div class="search-cart">
+							<div class="search-box">
+								<a href="#">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</a>
+								<input type="text" name="" placeholder="Tìm kiếm ">
+							</div>
+							<div class="phone">
+								<span>
+									<i class="fa fa-phone" aria-hidden="true"></i>
+									+84 98.983.6086  
+								</span>
+							</div>
+							<div class="cart">
+								<a href="#">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</a>
+								<span class="number_product">
+									1
+								</span>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="main-menu clearfix">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<ul>
+							<li class="active">
+								<a href="">
+									TRANG CHỦ
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Giới thiệu
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									SẢN PHẨM
+								</a>
+								<ul>
+		                            <li>
+		                                <a href="">Dịch vụ 1</a>
+		                                <ul>
+		                                    <li>
+		                                        <a href="">Menu cap 3</a>
+		                                    </li>
+		                                    <li>
+		                                        <a href="">Menu cap 3</a>
+		                                    </li>
+		                                    <li>
+		                                        <a href="">Menu cap 3</a>
+		                                    </li>
+		                                </ul>
+		                                <span class="span-lv-2 fa fa-angle-down"></span>
+		                            </li>
+		                            <li>
+		                                <a href="">Dịch vụ 2</a>
+		                            </li>
+		                            <li>
+		                                <a href="">Dịch vụ 3</a>
+		                            </li>
+		                        </ul>
+		                        <span class="span-lv-1 fa fa-angle-down"></span>
+							</li>
+							<li><a href="">GIẢI PHÁP VỀ CỬA</a></li>
+							<li><a href="">TIN TỨC</a></li>
+							<li><a href="">VIDEO</a></li>
+							<li><a href="">LIÊN HỆ</a></li>
+						</ul>
+					</div>
+				</div>
+					
+			</div>
+		</div>
+		<div class="shadow-menu"></div>
+	</div>
+
+	<div class="wapper" id="main">
+		<div class="breadcrumb">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        				<h2>
+		        			Giỏ hàng
+		        		</h2>
+		        		<div class="link">
+		        			<a href="">Home</a>
+				        	<span> > </span>
+				        	<a href=""> Giỏ hàng </a>>
+		        		</div>
+        			</div>
+    			</div>
+    		</div>
+        </div>
+
+        <div class="main-detail-cart">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+						<div class="table-cart">
+							<table cellpadding="0">
+								<thead>
+									<tr>
+										<th colspan="2">
+											Sản phẩm
+										</th>
+										<th>
+											Giá
+										</th>
+										<th>
+											Số lượng
+										</th>
+										<th colspan="2">
+											Tổng
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="item-cart">
+										<td class="img-product">
+											<a href="#">
+												<img src="images/item-p.png">
+											</a>
+										</td>
+										<td class="name-product">
+											Làm việc hết sức vui chơi hết mình | SH -22
+										</td>
+										<td class="price">
+											120.000 VNĐ
+										</td>
+										<td class="amount">
+											<div class="count clearfix">
+		                                        <input type="text" value="1"/>
+		                                        <span class="gr-icon">
+		                                            <span class="plus">+</span>
+		                                            <span class="minus">-</span>
+		                                        </span>
+		                                    </div>
+										</td>
+										<td class="total">
+											120.000 VNĐ
+										</td>
+										<td class="remove">
+											<a href="#">
+												<i class="fa fa-times" aria-hidden="true"></i>
+											</a>
+										</td>
+									</tr>
+									<tr class="action">
+										<td colspan="6">
+											<div class="coupon">
+												<input type="text" name="" placeholder="Mã khuyến mại (nếu có)">
+												<button type="submit" value="" class="apply">
+													Áp dụng
+												</button>
+											</div>
+											<button type="submit" class="update-cart">
+												Cập nhật giỏ hàng
+											</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+						<div class="total-cart">
+							<table>
+								<thead>
+									<tr>
+										<td colspan="2" class="title">
+											Cộng giỏ hàng
+										</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="key">
+											Tạm tính:
+										</td>
+										<td class="value">
+											120.000 VNĐ
+										</td>
+									</tr>
+									<tr>
+										<td class="key">
+											Giao hàng:
+										</td>
+										<td class="value">
+											phí giao hàng theo nhà vận chuyển
+										</td>
+									</tr>
+									<tr>
+										<td class="key">
+											Thuế:
+										</td>
+										<td class="value">
+											12.000 VNĐ
+											<span>
+												(ước tính cho Việt Nam)
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td class="key">
+											Tổng:
+										</td>
+										<td class="value">
+											132.000 VNĐ
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<button class="pay" type="submit">
+												Thanh toán
+											</button>
+											<button class="continue" type="submit">
+												Tiếc tục mua sắm
+											</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<footer class="wow fadeInUp clearfix">
+		<div class="footer-top wow zoomInRight" data-wow-duration="2s">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="introduce ft-item">
+							<h3>
+								công ty cổ phần nội thất - quảng cáo - truyền thông sông hồng
+							</h3>
+							<p>
+								<i class="fa fa-map-marker" aria-hidden="true"></i>
+								Số 49 Trần Phú , P.Văn Quán , Q.Hà Đông, TP.Hà Nội
+							</p>
+							<p>
+								<i class="fa fa-phone" aria-hidden="true"></i>
+								098 9836 086 / 091 2466 063
+							</p>
+							<p>
+								<i class="fa fa-envelope-o" aria-hidden="true"></i>
+								songhongfam@gmail.com
+							</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="cover">
+							<div class="service ft-item">
+								<h3>
+									dịch vụ & và bảo hành
+								</h3>
+								<a href="#">
+									thiết kế theo yêu cầu
+								</a>
+								<a href="#">
+									tư vấn miễn phí
+								</a>
+								<a href="#">
+									mã giảm giá
+								</a>
+								<a href="#">
+									bảo hành & đổi trả
+								</a>
+								<a href="#">
+									liên kết hợp tác
+								</a>
+							</div>
+						</div>
+							
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="cover">
+							<div class="payment ft-item">
+								<h3>
+									thanh toán và giao hàng
+								</h3>
+								<a href="#">
+									hướng dẫn mua tranh
+								</a>
+								<a href="#">
+									hình thức thanh toán	
+								</a>
+								<a href="#">
+									giới thiệu tranh slogan
+								</a>
+								<a href="#">
+									liên hệ & góp ý
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="fanpage ft-item">
+							<h3>
+								fanpage của chúng tôi
+							</h3>
+							<a href="#">
+								<img src="images/fb.jpg">
+							</a>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="footer-bottom clearfix">
+			<p class="copy-right">
+				<i class="fa fa-copyright" aria-hidden="true"></i>
+				Copyright 2019. All Rights Reserved. Thiết kế website bởi Nanoweb
+			</p>
+		</div>
+	</footer>
+
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script src="js/wow.min.js" type="text/javascript"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+<script src="js/main.js" type="text/javascript"></script>
+
+<script>
+    $('data-fancybox').fancybox();
+</script>
+
+<script>
+    $(document).ready(function(e){
+        wow = new WOW(
+          {
+            offset:       100,          // default
+            mobile:       false,
+            callback:     function(box) {
+              console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+          }
+        );
+        wow.init();
+    });
+</script>
+
+</body>

@@ -1,0 +1,92 @@
+.main-contact{
+	.row{
+		display: flex;
+	}
+	.col-left{
+		padding-right: 0;
+		background-image: url("../images/banner-contacty.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		.address{
+			width: 80%;
+			margin: 0 auto;
+			display: block;
+			padding: 70px 0;
+			h1{
+				font-size: 16px;
+				font-weight: 500;
+				color: #fff;
+				text-transform: uppercase;
+				margin-bottom: 30px;
+				margin-top: 0;
+			}
+			i{
+				color: #fff;
+			}
+			p{
+				color: #fff;
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 22px;
+			}
+			.map{
+				width: 100%;
+			}
+		}
+	}
+	.col-right{
+		padding-left: 0;
+		background-color: $color-main;
+		.form-contact{
+			width: 80%;
+			display: block;
+			margin: 0 auto;
+			padding: 70px 0;
+			h2{
+				font-size: 16px;
+				font-weight: 500;
+				color: #fff;
+				margin-bottom: 30px;
+				margin-top: 0;
+			}
+			p{
+				font-weight: normal;
+				font-size: 14px;
+				color: #fff;
+				margin-top: 8px;
+				margin-bottom: 3px;
+			}
+			input{
+				width: 100%;
+				padding: 7px 15px;
+				&::-webkit-input-placeholder {
+					font-style: italic;
+					font-weight: normal;
+					font-size: 12px;
+					color:#9E9E9E;
+				}
+			}
+			textarea{
+				width: 100%;
+				padding: 7px 15px;
+				resize: none;
+				&::-webkit-input-placeholder{
+					font-style: italic;
+					font-weight: normal;
+					font-size: 12px;
+					color:#9E9E9E;
+				}
+			}
+			a.submit{
+				background: #535353;
+				padding: 8px 20px;
+				font-weight: 500;
+				font-size: 14px;
+				color: #fff;
+				display: block;
+				float: right;
+				margin-top: 20px;
+			}
+		}
+	}
+}

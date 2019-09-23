@@ -1,0 +1,144 @@
+.header{
+	float: left;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	box-shadow: 1px 2px 6px #cccccc38;
+	padding: 1.5rem 0;
+	position: relative;
+    @include transition(.5s);
+    @media (max-width: 991px){
+		padding: 10px 0;
+	}
+	@media (max-width: 767px){
+		position: relative;
+	}
+	&.fixed-header{
+		// position: fixed;
+		background: #fff;
+	}
+	.logo{
+		position: relative;
+		// float: left;
+		// width: 250px;
+		@include transition(.5s);
+		@media (max-width: 767px){
+			width: 250px;
+		}
+		@media (max-width: 340px){
+			width: 220px;
+		}
+		img{
+			max-height: 100%;
+		}
+	}
+	.search-cart{
+		margin-top: 15px;
+		.search-box{
+			display: inline-block;
+			width: 55%;
+			position: relative;
+			input{
+				width: 100%;
+				padding: 5px 20px;
+				padding-left: 40px;
+				border-radius: 20px;
+				border: 0.5px solid #7A7A7A;
+				color: #7C7C7C;
+				&::-webkit-input-placeholder {
+					font-style: italic;
+					font-weight: normal;
+					font-size: 14px;
+					color: #7C7C7C;
+				}
+				&:focus{
+					outline: none;
+				}
+			}
+			i{
+				position: absolute;
+				top: 10px;
+				left: 18px;
+				color: #7C7C7C;
+			}
+		}
+		.phone{
+			margin-left: 30px;
+			display: inline-block;
+			background: linear-gradient(182.18deg, #FD4F04 -34.63%, #F13338 64.24%, #AC0E13 134.24%);
+			padding: 5px 30px;
+			padding-left: 20px;
+			border-radius: 50px;
+			color: #fff;
+			i{
+				padding-right: 10px;
+			}
+		}
+		.cart{
+			display: inline-block;
+			float: right;
+			border: 1px solid #6F6F6F;
+			border-radius: 50px;
+			background: #fff;
+			position: relative;
+			i{
+				color: #6F6F6F;
+				padding: 10px;
+			}
+			.number_product{
+				position: absolute;
+				top: -10px;
+			    right: -10px;
+			    padding: 1px 7px;
+			    background: #F02B00;
+			    border-radius: 50px;
+			    color: #fff;
+			}
+		}
+	}
+}
+
+// #main{
+// 	margin-top: 120px;
+// }
+
+.page-in{
+	.header{
+		position: relative;
+		&.fixed-header {
+		    position: fixed;
+		    background: #fff;
+		}
+	}
+}
+
+.top-header{
+	padding: 10px 0;
+	border-bottom: 1px solid #ededed;
+	.info-contact{
+		color: #333;
+		opacity: 0.3;
+		display: inline-block;
+		.phonenumber{
+			display: inline-block;
+			padding-right: 40px;
+		}
+		.email{
+			display: inline-block;
+		}
+	}
+	.icon-social{
+		float: right;
+		a{
+			margin-left: 15px;
+			i{
+				color: #fff;
+				opacity: 0.3;
+				padding: 8px 10px;
+				background: #b3b3b3;
+				border-radius: 50px;
+			}
+		}
+	}
+}

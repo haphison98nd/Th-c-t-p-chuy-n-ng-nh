@@ -1,0 +1,161 @@
+.main-thanhtoan{
+	h4{
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 25px;
+		letter-spacing: 0.05em;
+		color: #484848;
+		text-transform: uppercase;
+		margin: 0;
+	}
+	.form-thanhtoan{
+		form{
+			.gr-inline{
+				display: flex;
+				.item-input{
+					width: 50%;
+				}
+				.item-input.mail{
+					padding-left: 10px;
+				}
+
+			}
+			.item-input{
+				margin-top: 30px;
+				span.field-name{
+					font-size: 14px;
+					line-height: 22px;
+					color: #353535;
+					display: block;
+					margin-bottom: 6px;
+					span.star{
+						color: #C20000;
+					}
+				}
+				input{
+				    padding: 7px 15px;
+				    background: #FFFFFF;
+					border: 1px solid rgba(130, 130, 130, 0.3);
+					box-sizing: border-box;
+					color: #333;
+				}
+				input.full{
+					width: 100%;
+				}
+				textarea{
+					width: 100%;
+					resize: none;
+					padding: 7px 15px;
+				    background: #FFFFFF;
+				    color: #333;
+					border: 1px solid rgba(130, 130, 130, 0.3);
+				}
+			}
+		}
+	}
+	.info-thanhtoan{
+		padding: 22px 30px 58px 31px;
+		background: #EFEFEF;
+		form{
+			label{
+				font-weight: 500;
+			}
+			margin-top: 31px;
+			ul{
+				li{
+					list-style: none;
+					margin-bottom: 10px;
+				}
+			}
+			table{
+				thead{
+					th{
+						font-weight: 500;
+						font-size: 16px;
+						line-height: 25px;
+						letter-spacing: 0.05em;
+						color: #378AD0;
+						text-transform: uppercase;
+						width: 50%;
+					}
+				}
+				tbody{
+					tr{
+						border-bottom: 1px solid rgba(205, 205, 205, 0.3);
+						
+						td{
+							line-height: 25px;
+							padding: 10px 15%;
+							padding-left: 0;
+							color: #424242;
+							span{
+								display: block;
+							}
+							span.name-product{
+								font-size: 14px;
+								line-height: 22px;
+								color: #E15151;
+							}
+							span.money{
+								font-size: 16px;
+								line-height: 19px;
+								color: #378AD0;
+								font-weight: 500;
+							}
+							label{
+								margin: 0;
+								font-weight: 500;
+							}
+						}
+					}
+				}
+			}
+			ul.payment{
+				margin-top: 14px;
+				li{
+					color: #4B4B4B;
+					font-size: 16px;
+					line-height: 19px;
+				}
+			}
+			p.notification{
+				font-size: 14px;
+				line-height: 24px;
+				color: #424242;
+				margin-bottom: 26px;
+			}
+			a{
+				color: #3E8AFD;
+			}
+			label.confirm{
+				color: #000000;
+				font-weight: 400;
+			}
+			span.star{
+				color: #DF0D0D;
+			}
+			button.submit{
+				width: 100%;
+				background: #378AD0;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 22px;
+				color: #FFFFFF;
+				text-transform: uppercase;
+				height: 47px;
+				margin-top: 47px;
+				border: 1px solid #378AD0;
+				&:hover{
+					background: #fff;
+					color: #378AD0;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.info-thanhtoan{
+		margin-top: 30px;
+	}
+}

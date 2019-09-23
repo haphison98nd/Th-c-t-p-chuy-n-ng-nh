@@ -1,0 +1,267 @@
+body{
+    overflow-x: hidden;
+}
+p{
+	margin: 0;
+}
+// import font
+@font-face {
+	font-family: Pony;
+	src: url(../fonts/Pony.ttf);
+}
+@font-face {
+	font-family: SVN-Comic;
+	src: url(../fonts/SVN-Comic-Sans-MS.ttf);
+}
+@font-face {
+	font-family: UTM-Neo;
+	src: url(../fonts/UTM-Neo-Sans-Intel.ttf);
+}
+@font-face {
+	font-family: SVN-KG-Ten-Thousand-Reasons;
+	src: url(../fonts/SVN-KG-Ten-Thousand-Reasons.ttf);
+}
+
+.breadcrumb{
+	float: left;
+	width: 100%;
+	background-color: transparent;
+	margin-bottom: 0;
+	border-bottom: none;
+	padding: 15px 0 10px 0;
+	p, span, a{
+		color: #828282;
+		display: inline-block;
+		margin-right: 6px;
+		margin-bottom: 0;
+	}
+	a{
+		&:hover{
+			color: #ff4c52;
+		}
+	}
+}
+
+
+.banner-main{
+	// float: left;
+	// width: 100%;
+	position: relative;
+
+	@media (max-width: 991px){
+		.slick-dots {
+			bottom: 5px;
+			margin-bottom: 0;
+		}
+	}
+
+	.bg-banner{
+		float: left;
+		width: 100%;
+		position: relative;
+		img{
+			min-width: 100%;
+		}
+		&:after{
+			content:"";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(180deg, rgba(31, 31, 31, 0) 0%, rgba(31, 31, 31, 0.3215686274509804) 100%);
+		}
+	}
+	.title{
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+		z-index:9;
+		@media(max-width: 767px){
+        	zoom: .8;
+        }
+        @media(max-width: 340px){
+        	zoom: .7;
+        }
+        button.join-now{
+    		color: #fff;
+    		background: #EE3897;
+    		position: absolute;
+    		left: 18%;
+			bottom: 10%;
+			border: 1px solid #EE3897;
+			padding: 10px 40px;
+			border-radius: 10px;
+			&:hover{
+				background: transparent;
+				color: #EE3897;
+			}
+    	}
+	}
+	.owl-dots{
+	    text-align: center;
+	    margin-top: 15px;
+	    .owl-dot{
+	    	background: #fff !important;
+		    border: 1px solid #49479D !important;
+		    padding: 10px;
+		    width: 10px;
+		    height: 10px;
+		    border-radius: 50px;
+		    margin: 5px;
+		    &:focus{
+		    	outline: none;
+		    }
+		    &.active{
+		    	background: #49479D !important;
+		    }
+	    }
+	}
+}
+
+.no-bg{
+	background: transparent;
+}
+
+.reason-choose{
+	margin: 80px 0px;
+	.video{
+		iframe{
+			max-width: 100%;
+			max-height: 315px;
+		}
+	}
+	.gr-reason{
+		h2{
+			font-family: Pony;
+			color: $title;
+			letter-spacing: 0.02em;
+			font-size: 25px;
+			line-height: 39px;
+			margin-top: 0;
+			margin-bottom: 20px; 
+			&>img{
+				margin-left: 15px;
+			}
+		}
+		.item-reason{
+			display: inline-block;
+			margin-bottom: 20px;
+			.img{
+				width: 25%;
+				float: left;
+			}
+			.content{
+				width: calc(100% - 25% - 10px);
+				float: right;
+				h4{
+					color: #2D2D2D;
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 19px;
+					letter-spacing: 0.02em;
+				}
+				p{
+					font-size: 14px;
+					line-height: 22px;
+					letter-spacing: 0.02em;
+					color: #2D2D2D;
+				}
+			}
+		}
+	}
+}
+
+.feedback{
+	background-image: url('../images/bg-feedback.png');
+	padding: 30px 0px;
+	img.quote{
+		width: 55px;
+		height: 51px;
+		display: block;
+		margin: 0 auto;
+	}
+	h2{
+		font-family: Pony;
+		font-size: 25px;
+		line-height: 39px;
+		letter-spacing: 0.02em;
+		color: #49469C;
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 30px;
+	}
+	.item-fdb{
+		display: inline-block;		
+		.avatar{
+			width: 11%;
+			color: #49469C;
+			font-size: 16px;
+			p{
+				margin-top: 10px;
+				margin-bottom: 0;
+			}
+		}
+		.avatar-left{
+			float: left;
+			text-align: left;
+			p{
+				text-align: center;
+			}
+		}
+		.avatar-right{
+			float: right;
+			text-align: right;
+			p{
+				text-align: center;
+			}
+		}
+		.quote{
+			background: #FFFAF5;
+			border-radius: 20px;
+			padding: 25px 35px;
+			width: calc(100% - 12% - 15px);
+			position: relative;
+			float: right;
+			p{
+				margin: 0;
+				text-indent: 10px;
+				font-size: 18px;
+				font-family: SVN-Comic;
+				color: #3C3C3C;
+			}
+			&:before{
+				position: absolute;
+				background: transparent;
+				content: '';
+				width: 0;
+				height: 0;
+			}
+			&.quote-right:before{
+				border-top: 0px solid transparent;
+			    border-right: 30px solid #FFFAF5;
+			    border-left: 10px solid transparent;
+			    border-bottom: 25px solid transparent;
+			    top: 15px;
+			    left: -35px;
+			}
+			&.quote-left:before{
+				border-top: 0px solid transparent;
+			    border-left: 30px solid #FFFAF5;
+			    border-right: 10px solid transparent;
+			    border-bottom: 25px solid transparent;
+			    top: 15px;
+			    right: -35px;
+			}
+		}
+
+		.quote-left{
+			float: left;
+		}
+		.quote-right{
+			float: right;
+		}
+	}
+}
